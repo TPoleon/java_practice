@@ -23,7 +23,7 @@ class Point3D extends Point3 {
     int z;
 
     Point3D(int x, int y, int z) {
-        super(x, y);
+        super(x, y);    //super(); 오류
         this.z = z;
     }
 

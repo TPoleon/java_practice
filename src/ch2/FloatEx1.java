@@ -1,17 +1,17 @@
 package ch2;
 
 public class FloatEx1 {
-  public static void main(String[] args) {
-    float f = 9.123456678901234567890f;
-    float f2 = 123456.2345678901234567890f;
-    double d = 9.12345678901234567890d;
-    char ch = 1000;
+    public static void main(String[] args) {
+        float f = 9.123456678901234567890f;
+        float f2 = 123456.2345678901234567890f;
+        double d = 9.12345678901234567890d;
+        char ch = 1000;
 
-    System.out.printf("123456789012345678901234%n");
-    System.out.printf("f  : %f%n", f);
-    System.out.printf("f  : %24.20f%n", f);
-    System.out.printf("f  : %24.20f%n", f2);
-    System.out.printf("f  : %24.20f%n", d);
-    System.out.println(ch);
-  }
+        System.out.printf("123456789012345678901234%n");
+        System.out.printf("f  : %f%n", f);
+        System.out.printf("f  : %24.20f%n", f);
+        System.out.printf("f  : %24.20f%n", f2);
+        System.out.printf("f  : %24.20f%n", d);
+        System.out.println(ch);
+    }
 }

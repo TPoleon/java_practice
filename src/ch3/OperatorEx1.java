@@ -6,7 +6,7 @@ public class OperatorEx1 {
         i++;
         System.out.println(i);
 
-        i=5;
+        i = 5;
         ++i;
         System.out.println(i);
     }

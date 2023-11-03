@@ -3,27 +3,27 @@ package ch4;
 import java.util.Scanner;
 
 public class FlowEx27 {
-  public static void main(String[] args) {
-    int num;
-    int sum = 0;
-    boolean flag = true; // while문의 조건식으로 사용될 변수
-    Scanner scanner = new Scanner(System.in);
+    public static void main(String[] args) {
+        int num;
+        int sum = 0;
+        boolean flag = true; // while문의 조건식으로 사용될 변수
+        Scanner scanner = new Scanner(System.in);
 
-    System.out.println("합계를 구할 숫자를 입력하세요. 끝내려면 0입력");
+        System.out.println("합계를 구할 숫자를 입력하세요. 끝내려면 0입력");
 
-    while(flag) {
-      System.out.print(">>");
+        while (flag) {
+            System.out.print(">>");
 
-      String tmp = scanner.nextLine();
-      num = Integer.parseInt(tmp);
+            String tmp = scanner.nextLine();
+            num = Integer.parseInt(tmp);
 
-      if(num!=0) {
-        sum += num;
-      } else {
-        flag = false;
-      }
+            if (num != 0) {
+                sum += num;
+            } else {
+                flag = false;
+            }
+        }
+
+        System.out.println("합계:" + sum);
     }
-
-    System.out.println("합계:"+ sum);
-  }
 }

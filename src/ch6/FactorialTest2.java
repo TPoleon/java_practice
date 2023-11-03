@@ -8,7 +8,7 @@ public class FactorialTest2 {
     }
 
     public static void main(String[] args) {
-        int n = 25;
+        int n = 21;
         long result = 0;
 
         for (int i = 1; i <= n; i++) {

@@ -1,23 +1,23 @@
 package ch6;
 
 public class BlockTest {
-  static {
-    System.out.println("static { }");
-  }
+    static {
+        System.out.println("static { }");
+    }
 
-  {
-    System.out.println("{ }");
-  }
+    {
+        System.out.println("{ }");
+    }
 
-  public BlockTest() {
-    System.out.println("생성자");
-  }
+    public BlockTest() {
+        System.out.println("생성자");
+    }
 
-  public static void main(String[] args) {
-    System.out.println("BlockTest bt = new BlockTest(); ");
-    BlockTest bt = new BlockTest();
+    public static void main(String[] args) {
+        System.out.println("BlockTest bt = new BlockTest(); ");
+        BlockTest bt = new BlockTest();
 
-    System.out.println("BlockTest bt2 = new BlockTest(); ");
-    BlockTest bt2 = new BlockTest();
-  }
+        System.out.println("BlockTest bt2 = new BlockTest(); ");
+        BlockTest bt2 = new BlockTest();
+    }
 }

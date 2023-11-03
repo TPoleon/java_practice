@@ -1,11 +1,11 @@
-package ch6;
+package ch7;
 
 public class TimeTest {
     public static void main(String[] args) {
         Time t = new Time(12, 35, 30);
         System.out.println(t);
-        //t.hour = 13; //에러
-        t.setHour(t.getHour() + 1);
+        //t.hour; 변수 hour의 접근제어자가 private이므로 접근할 수 없다.
+        t.setHour(t.getHour() + 1);   // 현재시간보다 1시간 후로 변경한다.
         System.out.println(t);
     }
 }
@@ -33,15 +33,8 @@ class Time {
     }
 
     public void setMinute(int minute) {
-
-        if (isaBoolean(minute)) return;
+        if (minute < 0 || minute > 59) return;
         this.minute = minute;
-    }
-
-
-    // alt+shift+m -> 메서드 추출하기.
-    private static boolean isaBoolean(int minute) {
-        return minute < 0 || minute > 59;
     }
 
     public int getSecond() {
@@ -57,4 +50,3 @@ class Time {
         return hour + ":" + minute + ":" + second;
     }
 }
-
