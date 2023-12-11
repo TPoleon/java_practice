@@ -18,7 +18,7 @@ class Car {
     String color;
     int door;
 
-    void dirve() {
+    void drive() {
         System.out.println("drive, Brrrr~");
     }
 
